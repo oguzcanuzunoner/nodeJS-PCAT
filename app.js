@@ -4,13 +4,15 @@ const app = express();
 
 app.get('/', (req, res) => {
 
-    const blog = {
-        id: 1, title: "Blog title", description: "Blog description"
-    }
-    res.send(blog)
+  const photo = {
+    id: 1,
+    name: "Photo Name",
+    description: "Photo description"
+  }
+  res.send(photo)
 })
 
 const port = 3000;
 app.listen(port, () => {
-    console.log(`Sunucu ${port} portunda başlatıldı..`);
+  console.log(`Sunucu ${port} portunda başlatıldı..`);
 });
